@@ -1,6 +1,6 @@
 {
   "name": "react-app-boilerplate",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "基于create-react-app脚手架搭建并结合m2&react开发库",
   "homepage": ".",

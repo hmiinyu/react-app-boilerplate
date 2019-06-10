@@ -6,6 +6,7 @@ First clone the boilerplate into your application:
 
 ### `git clone https://github.com/hmiinyu/react-app-boilerplate.git my-react-app`
 ### `cd my-react-app`
+### `npm install` or `yarn install` (recommend)
 
 In the project directory, you can run:
 
