@@ -8,7 +8,14 @@ render(
   <Root store={AppStore()} routes={AppRouter}/>
 )
 
-// 多个组件使用components参数
+// 支持对路由的类型配置，默认"hash", 可配置为browser路由
+/*
+render(
+  <Root store={AppStore()} routes={AppRouter} routeType="browser" />
+)
+*/
+
+// 多个组件渲染使用components参数
 /*
 render({
   components: [

@@ -46,5 +46,5 @@ const _fetch = (url, options) => {
   })
 }
 
-export const get = (url, options = {}) => _fetch(url, options);
-export const post = (url, options = {}) => _fetch(url, {...options, method: 'post'});
+export const get = (url, options = {}) => _fetch(url, options)
+export const post = (url, options = {}) => _fetch(url, {...options, method: 'post'})

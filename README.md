@@ -25,3 +25,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+You can learning the M2 architecture via visiting: 
+https://app.yinxiang.com/fx/c541e662-a573-47e0-af9c-b98d4ca52714
