@@ -6,6 +6,7 @@ export default {
   name: '公共模块',
   layout: 'simple',
   children: [
-    { path: '404', component: NotFoundPage }
+    // public: true 代表当前页面不需要认证
+    { path: '404', component: NotFoundPage, public: true }
   ]
 }

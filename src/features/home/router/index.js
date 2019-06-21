@@ -5,6 +5,7 @@ export default {
   path: '',
   name: '首页模块',
   children: [
-    { name: '默认页', component: HomePage, default: true }
+    { name: '默认页', component: HomePage, default: true },
+    { name: '首页', path: '/home', component: HomePage }
   ]
 }
