@@ -28,10 +28,9 @@ class HomePage extends React.Component {
   async handleLogout() {
     const result = await authService.logout()
     if (result) {
-      const { /*userLogout,*/ clearRedux } = this.props
-      // userLogout({ username: '', authenticated: false })
+      const { userLogout, clearRedux } = this.props
+      userLogout({ username: '', authenticated: false })
       clearRedux()
-      // location.hash = '/app/auth/login'
       location.hash = '/auth/login'
     }
   }

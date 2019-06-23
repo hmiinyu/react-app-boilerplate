@@ -11,9 +11,9 @@
     "uat": "node scripts/uat.js"
   },
   "dependencies": {
-    "m2-core": "^1.1.0",
-    "m2-react": "^1.1.0",
-    "m2-redux": "^1.1.0",
+    "m2-core": "^1.1.1",
+    "m2-react": "^1.1.1",
+    "m2-redux": "^1.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -33,6 +33,7 @@
     "babel-plugin-import": "^1.12.0",
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-preset-react-app": "^9.0.0",
+    "browserslist": "4.6.2",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "css-loader": "2.1.1",
@@ -75,6 +76,10 @@
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "4.2.0"
   },
+  "resolutions": {
+    "browserslist": "4.6.2",
+    "caniuse-lite": "1.0.30000974"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -105,16 +110,9 @@
       ]
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    "last 2 versions",
+    "android 4",
+    "opera 12"
+  ]
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { DataStorage } from 'm2-core'
+import { DataStorage, SYMMETRIC_CRYPTO_TYPE } from 'm2-core'
 import { connect } from 'm2-redux'
 import { authService } from '@/features/app/service'
 import { userLogin } from '@/features/auth/redux/actions'
@@ -10,8 +10,11 @@ class UserLoginPage extends React.Component {
   async handleLogin() {
     const result = await authService.login('Miracle', 123)
     if (result) {
-      DataStorage.set('app-access-token', result.token)
-      this.props.userLogin({ username: result.username, authenticated: true })
+      const { userLogin } = this.props
+      const { username, token }= result
+
+      DataStorage.set('app-access-token', token, { encryptType: SYMMETRIC_CRYPTO_TYPE.DES })
+      userLogin({ username, authenticated: true })
       location.hash = '/'
     }
   }
