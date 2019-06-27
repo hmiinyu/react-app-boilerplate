@@ -9,19 +9,19 @@ import './index.less'
 @connect({ reducers: ['home', 'auth'], actions: { getDataList, getDataItem, clearRedux, userLogout } })
 class HomePage extends React.Component {
   state = {
-    // 定义组件内部状态数据
+    // define the stateless data
   }
 
   fields = {
-    // 定义组件内部无状态数据
+    // define the immutable  data
   }
 
   static propTypes = {
-    // 定义组件间交互参数类型
+    // define props data type
   }
 
   componentDidMount() {
-    // 对页面元素操作，向服务端发放数据请求
+    // fetch the data from server
     // this.props.getDataList()
   }
 
@@ -40,10 +40,10 @@ class HomePage extends React.Component {
 
     return (
       <div className="home-page">
-        <span>您好，{loginUser.username}</span>
-        <button className="btn btn-danger"  style={{marginLeft:10}} onClick={()=>this.handleLogout()}>注销</button>
-        <h2>React工程化已配置完毕，从现在开始实现业务吧！</h2>
-        <img src="/static/img/app-arch.png" alt="React工程架构"/>
+        <span>Welcome，{loginUser.username}</span>
+        <button className="btn btn-danger"  style={{marginLeft:10}} onClick={()=>this.handleLogout()}>Logout</button>
+        <h2>React project has been ready, let's start!</h2>
+        <img src="/static/img/app-arch.png" alt="React Architect"/>
       </div>
     )
   }
