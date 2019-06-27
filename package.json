@@ -2,7 +2,7 @@
   "name": "react-app-boilerplate",
   "version": "1.0.0",
   "private": true,
-  "description": "基于create-react-app脚手架搭建并结合m2&react开发库",
+  "description": "This is a boilerplate based on create-react-app and m2 library.",
   "homepage": ".",
   "scripts": {
     "start": "node scripts/dev.js",
@@ -11,7 +11,7 @@
     "uat": "node scripts/uat.js"
   },
   "dependencies": {
-    "m2-core": "^1.1.1",
+    "m2-core": "^1.1.2",
     "m2-react": "^1.1.1",
     "m2-redux": "^1.1.1",
     "prop-types": "^15.7.2",

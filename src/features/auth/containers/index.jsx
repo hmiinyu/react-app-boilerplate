@@ -23,7 +23,7 @@ class UserLoginPage extends React.Component {
     return (
       <div className="user-login-page">
         <div className="profile">
-          <button className="btn btn-info" onClick={()=>this.handleLogin()}>登录</button>
+          <button className="btn btn-info" onClick={()=>this.handleLogin()}>Login</button>
         </div>
       </div>
     )
