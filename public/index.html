@@ -23,7 +23,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-     <!-- If you need mobile responsive support, uncomment the following scripts -->
+    <!-- If you need mobile responsive support, uncomment the following scripts -->
     <!-- <script src="%PUBLIC_URL%/static/js/flexible/flexible.min.js"></script>
     <script src="%PUBLIC_URL%/static/js/fastclick/fastclick.min.js"></script>
     <script>
@@ -32,10 +32,11 @@
           FastClick.attach(document.body);
         }, false);
       }
-      if(!window.Promise) {
-        document.writeln('<script src="%PUBLIC_URL%/static/js/polyfill/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
-      }
     </script> -->
+    <!--[if gte IE 9]>
+    <script src="%PUBLIC_URL%/static/js/shims/es6-sham.min.js"></script>
+    <script src="%PUBLIC_URL%/static/js/shims/es6-shim.min.js"></script>
+    <![endif]-->
     <title>React App</title>
   </head>
   <body>
