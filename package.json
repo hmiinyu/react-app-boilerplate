@@ -11,13 +11,13 @@
     "uat": "node scripts/uat.js"
   },
   "dependencies": {
-    "m2-core": "^1.1.3",
-    "m2-react": "^1.1.1",
-    "m2-redux": "^1.1.1",
+    "m2-core": "^1.1.4",
+    "m2-react": "^1.1.3",
+    "m2-redux": "^1.1.3",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
+    "react": "^16.8.0",
     "react-app-polyfill": "^1.0.1",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.8.0",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "babel-plugin-import": "^1.12.0",
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-preset-react-app": "^9.0.0",
-    "browserslist": "4.6.2",
+    "browserslist": "4.6.3",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "css-loader": "2.1.1",
@@ -76,50 +76,9 @@
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "4.2.0"
   },
-  "resolutions": {
-    "browserslist": "4.6.2",
-    "caniuse-lite": "1.0.30000974"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/hmiinyu/react-app-boilerplate.git"
-  },
-  "eslintConfig": {
-    "extends": "react-app",
-    "rules": {
-      "no-restricted-globals": "off"
-    }
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ],
-    "plugins": [
-      [
-        "@babel/plugin-proposal-decorators",
-        {
-          "legacy": true
-        }
-      ],
-      [
-        "@babel/plugin-proposal-class-properties",
-        {
-          "loose": true
-        }
-      ]
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all",
-      "not ie <=9"
-    ],
-    "development": [
-      "last 2 versions",
-      "ie 11"
-    ]
   }
 }
