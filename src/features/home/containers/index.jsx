@@ -42,7 +42,7 @@ class HomePage extends React.Component {
       <div className="home-page">
         <span>Welcome，{loginUser.username}</span>
         <button className="btn btn-danger"  style={{marginLeft:10}} onClick={()=>this.handleLogout()}>Logout</button>
-        <h2>React project has been ready, let's start!</h2>
+        <h2>React project has been ready, let's start!!!!</h2>
         <img src="/static/img/app-arch.png" alt="React Architect"/>
       </div>
     )
