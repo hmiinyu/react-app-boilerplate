@@ -141,6 +141,7 @@ module.exports = function(webpackEnv) {
       // the line below with these two lines if you prefer the stock client:
       // require.resolve('webpack-dev-server/client') + '?/',
       // require.resolve('webpack/hot/dev-server'),
+      isEnvDevelopment && 'react-hot-loader/patch',
       isEnvDevelopment &&
         require.resolve('react-dev-utils/webpackHotDevClient'),
       // Finally, this is your app's code:
@@ -346,6 +347,7 @@ module.exports = function(webpackEnv) {
                   'babel-preset-react-app/webpack-overrides'
                 ),
                 plugins: [
+                  isEnvDevelopment && 'react-hot-loader/babel',
                   [
                     require.resolve('babel-plugin-named-asset-import'),
                     {
