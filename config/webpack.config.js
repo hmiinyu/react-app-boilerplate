@@ -116,6 +116,16 @@ module.exports = function(webpackEnv) {
         },
       });
     }
+    if (paths.appGlobalStyle) {
+      loaders.push({
+        loader: 'style-resources-loader',
+        options: {
+          patterns: [
+            paths.appGlobalStyle
+          ]
+        }
+      });
+    }
     return loaders;
   };
 
