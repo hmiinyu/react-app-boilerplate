@@ -11,7 +11,7 @@
     "uat": "node scripts/uat.js"
   },
   "dependencies": {
-    "m2-core": "^1.1.4",
+    "m2-core": "1.1.7",
     "m2-react": "1.1.1",
     "m2-redux": "1.1.1",
     "prop-types": "^15.7.2",
@@ -51,6 +51,7 @@
     "file-loader": "3.0.1",
     "fs-extra": "7.0.1",
     "html-webpack-plugin": "4.0.0-beta.5",
+    "http-proxy-middleware": "^0.19.1",
     "identity-obj-proxy": "3.0.0",
     "is-wsl": "^1.1.0",
     "less": "2.7.3",
