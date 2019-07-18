@@ -10,12 +10,12 @@ class UserLoginPage extends React.Component {
   async handleLogin() {
     const result = await authService.login('Miracle', 123)
     if (result) {
-      const { userLogin } = this.props
+      const { userLogin, history } = this.props
       const { username, token }= result
 
       DataStorage.set('app-access-token', token, { encryptType: SYMMETRIC_CRYPTO_TYPE.DES })
       userLogin({ username, authenticated: true })
-      location.hash = '/'
+      history.push('')
     }
   }
 

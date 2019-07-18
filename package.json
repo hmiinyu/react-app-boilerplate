@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "m2-core": "1.1.7",
-    "m2-react": "1.1.1",
-    "m2-redux": "1.1.1",
+    "m2-react": "1.1.5",
+    "m2-redux": "1.1.5",
     "prop-types": "^15.7.2",
     "react": "^16.8.0",
     "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.8.0",
-    "redux-thunk": "^2.3.0"
+    "react-router-dom": "4.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
