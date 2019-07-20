@@ -1,6 +1,6 @@
 import { ReduxFactory } from 'm2-redux'
-import { reducer as getDictListReducer } from '@/features/common/redux/controllers/getDictList'
 import config from '@/features/common/redux/config'
+import { reducer as getDictListReducer } from '@/features/common/redux/controllers/getDictList'
 
 const reducers = [
   getDictListReducer

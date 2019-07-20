@@ -1,7 +1,7 @@
 import { ReduxFactory } from 'm2-redux'
+import config from '@/features/home/redux/config'
 import { reducer as getDataListReducer } from '@/features/home/redux/controllers/getDataList'
 import { reducer as getDataItemReducer } from '@/features/home/redux/controllers/getDataItem'
-import config from '@/features/home/redux/config'
 
 const reducers = [
   getDataListReducer,
