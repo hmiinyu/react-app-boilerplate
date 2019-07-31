@@ -5,15 +5,16 @@
   "description": "This is a boilerplate based on create-react-app and m2 library.",
   "homepage": ".",
   "scripts": {
-    "start": "node scripts/dev.js",
+    "start": "node scripts/local.js",
     "build": "node scripts/prod.js",
+    "dev": "node scripts/dev.js",
     "st": "node scripts/st.js",
     "uat": "node scripts/uat.js"
   },
   "dependencies": {
-    "m2-core": "1.1.8",
+    "m2-core": "1.2.0",
     "m2-react": "1.1.6",
-    "m2-redux": "1.1.6",
+    "m2-redux": "1.1.8",
     "prop-types": "^15.7.2",
     "react": "^16.8.0",
     "react-app-polyfill": "^1.0.1",
